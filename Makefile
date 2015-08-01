@@ -3,10 +3,10 @@
 #and may not be redistributed without written permission.
 
 #OBJS specifies which files to compile as part of the project
-OBJS = main.cpp  
+OBJS = main.cpp  AppManager.cpp Timer.cpp
 
 #CC specifies which compiler we're using
-CC = g++
+CC = g++ 
 
 #INCLUDE_PATHS specifies the additional include paths we'll need
 INCLUDE_PATHS = 
@@ -17,8 +17,7 @@ LIBRARY_PATHS =
 #COMPILER_FLAGS specifies the additional compilation options we're using
 # -w suppresses all warnings
 # -Wl,-subsystem,windows gets rid of the console window#-w 
-COMPILER_FLAGS = 
-#to be addedd !!! -Wl,-subsystem,windows
+COMPILER_FLAGS =  -Wl,-subsystem,windows -std=c++11
 
 #LINKER_FLAGS specifies the libraries we're linking against
 LINKER_FLAGS = -lmingw32  
