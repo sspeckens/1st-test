@@ -4,6 +4,7 @@
 #include <windows.h>
 #include "Timer.h"
 
+#define ID_1MIN  	0x00005
 #define ID_15MIN  	0x00010
 #define ID_30MIN  	0x00020
 #define ID_1H   	0x00030
